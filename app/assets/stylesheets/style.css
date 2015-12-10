@@ -1,0 +1,60 @@
+img {
+	height: 200px;
+	width: auto;
+}
+
+ body { 
+ 	padding-top: 70px; 
+ 	/*background: light-blue;*/	
+ 	background: url(singletrail-175220_1280.jpg)no-repeat;
+	background-size: cover;
+}
+
+.actionCall {
+	font-size: 64px;
+	margin: auto;
+	text-align: center;
+	color:white;
+}
+
+.bikeButton{
+	width:66.5px;
+	display:inline-block;
+}
+
+.bikeName {
+	color:white;
+	background-color: grey;
+    width: 100%;
+}
+
+.card {
+	display: inline-block;
+}
+
+.outer { 
+	overflow-x: scroll; 
+}
+/*.card { min-width: 200px; }*/
+.browse-gallery {
+    width: 100%;
+    height: 200px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-top: 7px solid #585453;
+    background: #585453;
+    white-space: nowrap;
+    float: left;
+}
+.browse-gallery .img {
+    width: 109px;
+    height: 81px;
+    display: inline-block;
+    border-top: none;
+    /*float: left;*/
+    position: relative;
+    cursor: pointer;
+    margin-right: 5.7px;
+    white-space: nowrap;
+    background:#fff;
+}

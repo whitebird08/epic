@@ -1,0 +1,16 @@
+<%= form_for :bike, url: bike_path(@bike), method: :patch do |f| %>
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :image %><br>
+		<%= f.text_field :image %>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+
+<% end %>

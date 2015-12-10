@@ -1,0 +1,36 @@
+ <div class="browse-gallery">
+ 		<div class="outer">
+ 			<% @bikes.each do |bike| %>
+     <div class="img">
+ 				<div class="card">
+ 					<div class="bikeName"><%= bike.name %></div>
+ 					<img src='<%= bike.image %>'>
+ 						<br>
+ 						<button class="bikeButton">
+ 						<%= link_to "Show", bike_path(bike) %>
+ 						</button>
+ 						<button  class="bikeButton">
+ 						<%= link_to "Edit", edit_bike_path(bike) %> 
+ 						</button>
+ 						<button  class="bikeButton">
+ 						<%= link_to "Destroy", bike_path(bike),
+ 								method: :delete,
+ 								data: { confirm: 'Are you sure?'} %>
+ 						</button>
+ 					</div>	
+ 			<% end %>
+ 		</div>
+     </div>
+ </div>
+
+  
+
+
+
+
+
+
+
+
+
+
