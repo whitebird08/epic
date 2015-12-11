@@ -58,7 +58,7 @@
   <% end %>
   <% if comment.id %>
   <button>
-    <%= link_to 'Destroy',bike_comment_path(@bike, comment),
+    <%= link_to 'Destroy Comment',bike_comment_path(@bike, comment),
     method: :delete,
     data: { confirm: 'Are you sure?' } %>
   </button>
@@ -68,6 +68,13 @@
 
 
   <% end %>
+
+  <button>
+    <%= link_to 'Destroy Post',bike_path(@bike),
+    method: :delete,
+    data: { confirm: 'Are you sure?' } %>
+  </button>
+
 	<button class="bikeButton">
 	<%= link_to "Edit", edit_bike_path(@bike) %> 
 	</button>
