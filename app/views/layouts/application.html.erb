@@ -5,10 +5,42 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <%= yield %>
 
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+$(".leftArrow").click(function () { 
+  var leftPos = $('.outer').scrollLeft();
+  $(".outer").animate({scrollLeft: leftPos - 1440}, 800);
+});
+
+$(".rightArrow").click(function () { 
+  var leftPos = $('.outer').scrollLeft();
+  $(".outer").animate({scrollLeft: leftPos + 1440}, 800);
+});
+
+$(".browse-gallery").hover(
+	function(){ //when we hover over
+   	 $("#scrollButtons").show();
+	},
+	function(){ // when we hover out
+    	$("#scrollButtons").hide();
+	}
+);
+
+
+$(".downButton").click(function () { 
+ var y = $(window).scrollTop();  //your current y position on the page
+$(window).scrollTop(y+550);
+});
+
+
+</script>
 </body>
 </html>

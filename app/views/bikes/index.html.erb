@@ -1,29 +1,48 @@
- <div class="browse-gallery">
- 		<div class="outer">
- 			<% @bikes.each do |bike| %>
-     <div class="img">
- 				<div class="card">
- 					<div class="bikeName"><%= bike.name %></div>
- 					<img src='<%= bike.image %>'>
- 						<br>
- 						<button class="bikeButton">
- 						<%= link_to "Show", bike_path(bike) %>
- 						</button>
- 						<button  class="bikeButton">
- 						<%= link_to "Edit", edit_bike_path(bike) %> 
- 						</button>
- 						<button  class="bikeButton">
- 						<%= link_to "Destroy", bike_path(bike),
- 								method: :delete,
- 								data: { confirm: 'Are you sure?'} %>
- 						</button>
- 					</div>	
- 			<% end %>
- 		</div>
-     </div>
- </div>
+<!-- <div class="nav-bg navbar-fixed-top"></div> -->
+<div class="nav-name navbar-fixed-top">Lean In!
+	<button class="new-contribution">
+	 <%= link_to "New", new_bike_path(@bike) %>
+	</button>
+</div>
 
-  
+
+
+<div class='call-to-action'>Get Pumped!</div>
+
+
+
+
+
+<!-- <video class="iframeVideo" src="https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/4307/5/146538091/443245101.mp4?token=566a1aed_0x5933447ca9743eaa65b0bec72bd45a78b8ca9f9d" autoplay loop muted poster="posterimage.jpg"> -->
+
+<div class="downArrowDiv ">
+	<button class="downButton glyphicon glyphicon-menu-down"></button>
+</div>
+
+
+ <div class="browse-gallery ">
+	<div id="scrollButtons">
+		<button class="leftArrow glyphicon glyphicon-chevron-left"></button>
+		<button class="rightArrow glyphicon glyphicon-chevron-right"></button>		
+	</div>
+ 	<div class="outer">
+ 		<% @bikes.each do |bike| %>
+	 		<div class="card">
+				<div class="bikeName"><%= bike.name %>
+				</div>
+				<img src='<%= bike.image %>'><br/>
+					<button class="bikeButton">
+						<%= link_to "Lean In!", bike_path(bike) %>
+					</button>
+			</div>	
+ 		<% end %>
+ 	</div>
+</div>
+
+<div class='footer' navbar-fixed-bottom>
+</div>
+
+
 
 
 

@@ -1,6 +1,7 @@
 class BikesController < ApplicationController
 	def index
 		@bikes = Bike.all 
+		@bike = Bike.new
 	end
 
 	def show
@@ -23,12 +24,12 @@ class BikesController < ApplicationController
 	def update
 		@bike = Bike.find(params[:id])
 
-		# if 
+		if 
 		@bike.update(bike_params)
 		redirect_to @bike
-		# else
-		# 	render 'edit'
-		# end
+		else
+			render 'edit'
+		end
 	end
 
 	def destroy

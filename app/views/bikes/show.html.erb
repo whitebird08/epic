@@ -11,6 +11,63 @@
 </p>
 
 
+<h2>Add a comment:</h2>
+
+<%= form_for([@bike, @bike.comments.build]) do |f| %>
+
+<p>
+
+ <%= f.label :commenter %><br>
+
+ <%= f.text_field :commenter %>
+
+</p>
+
+<p>
+
+ <%= f.label :body %><br>
+
+ <%= f.text_area :body %>
+
+</p>
+
+<p>
+
+ <%= f.submit %>
+
+</p>
+
+<% end %>
+<% @bike.comments.each do |comment| %>
+  <% if comment.id %>
+<p>
+	<strong>Commenter:</strong>
+	<%= comment.commenter %>
+</p>
+<p>
+   <strong>Comment:</strong>
+   <%= comment.body %>
+</p>
+  <% end %>
+  <% if comment.id %>
+  <button>
+    <%= link_to 'Destroy',bike_comment_path(@bike, comment),
+    method: :delete,
+    data: { confirm: 'Are you sure?' } %>
+  </button>
+
+	<button  class="bikeButton">
+	<%= link_to "Edit", edit_bike_path(@bike) %> 
+	</button>
+
+  <% end %>
+
+
+  <% end %>
+
+
+
+
 
 
 

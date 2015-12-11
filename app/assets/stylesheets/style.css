@@ -1,13 +1,18 @@
+button {
+	/*color:lime-green;*/
+}
 img {
 	height: 200px;
 	width: auto;
 }
 
  body { 
- 	padding-top: 70px; 
- 	/*background: light-blue;*/	
- 	background: url(singletrail-175220_1280.jpg)no-repeat;
-	background-size: cover;
+ 	padding-top: -70px; 
+
+ 	background: url(racingPro.jpg)no-repeat;
+ 
+	/*background-size: cover;*/
+	overflow-x: scroll;
 }
 
 .actionCall {
@@ -16,20 +21,29 @@ img {
 	text-align: center;
 	color:white;
 }
+.new-contribution {
+	background-color: magenta;
+}
 
 .bikeButton{
-	width:66.5px;
+	width:100%;
 	display:inline-block;
+	background-color: limegreen;
+	border:none;
+	font-style: italic;
+	font-weight: bold;
 }
 
 .bikeName {
 	color:white;
-	background-color: grey;
+	background-color: aqua;
     width: 100%;
+    text-align: center;
 }
 
 .card {
 	display: inline-block;
+	margin: 20px;
 }
 
 .outer { 
@@ -38,23 +52,108 @@ img {
 /*.card { min-width: 200px; }*/
 .browse-gallery {
     width: 100%;
-    height: 200px;
+    height: 300px;
     overflow-x: scroll;
-    overflow-y: hidden;
-    border-top: 7px solid #585453;
+    overflow-y: scroll;
     background: #585453;
     white-space: nowrap;
-    float: left;
+  
 }
 .browse-gallery .img {
     width: 109px;
     height: 81px;
     display: inline-block;
-    border-top: none;
-    /*float: left;*/
-    position: relative;
-    cursor: pointer;
-    margin-right: 5.7px;
-    white-space: nowrap;
-    background:#fff;
 }
+
+.rightArrow {
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+	border: none;
+	font-size:2em;
+	border-radius: 80px;
+	float: right;
+	padding-right: 10px;
+	position: relative;
+	
+}
+
+.leftArrow {
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+	border: none;
+	font-size:2em;
+	border-radius: 80px;
+	padding-left: 10px;
+	position: relative;
+}
+
+.downButton{
+	font-size: 36px;
+	background: none;
+	color:white;
+	border: none;
+	text-align: center;
+	position: relative;
+}
+.downArrowDiv {
+	text-align: center;
+	margin:auto;
+}
+
+#scrollButtons{
+	width: 100%;
+	top: 62vw;
+	position:absolute;
+}
+.iframeVideo {
+	margin-top:-100px;
+	height: auto;
+	width: 100%;
+}
+
+.nav-bg{
+    height:75px;
+    width: 100%;
+    background-color:grey;
+    position: absolute;
+    opacity:0.5;
+    top:0	;
+}
+
+.nav-name {
+	font-size: 48px;
+	font-style: bold-italic;
+	font-weight: bold;
+	font-style: italic;
+	position: absolute;
+    top:0;
+    padding-left: 20px;
+    color:magenta;
+}
+
+.footer {
+	bottom:0;
+	height: 75px;
+	background: black;
+}
+
+.call-to-action {
+	font-size: 94px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	padding-top: 300px;
+	color:limegreen;
+
+/*	text-transform: uppercase;
+    transform-origin: center center;
+    position: relative;
+    -webkit-transform: rotate(-7deg) translateY(-50%);
+    -ms-transform: rotate(-7deg) translateY(-50%);
+    transform: rotate(-7deg) translateY(-50%);
+    top: 50%;*/
+}
+
+
