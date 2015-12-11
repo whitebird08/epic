@@ -1,5 +1,6 @@
-<%= link_to "Home", bikes_path %>
 
+<%= link_to "Home", bikes_path %>
+<div class="basic-grey">
 <%= form_for :bike, url: bike_path(@bike), method: :patch do |f| %>
 	<p>
 		<%= f.label :name %><br>
@@ -16,3 +17,4 @@
 	</p>
 
 <% end %>
+</div>

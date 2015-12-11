@@ -1,17 +1,24 @@
-<%= link_to "Home", bikes_path %>
+<div class="nav-name navbar-fixed-top">Lean In!
+  <button class="new-contribution">
+    <%= link_to "Home", bikes_path %>
+  </button>
+</div>
 
-<p>
-	<strong>Name:</strong>
+
+
+<div class='detailsCard basic-grey'>
+<p class='detailsName'>
+<!-- 	<strong>Name:</strong> -->
 	<%= @bike.name %>
 </p>
 
-<p>
-<strong>Image:</strong>
-	<img src='<%= @bike.image %>'>
+<p >
+<!-- <strong>Image:</strong> -->
+	<img class="detailsImage" src='<%= @bike.image %>'>
 </p>
 
 
-<h2>Add a comment:</h2>
+<h2 class="addComment">Add a comment:</h2>
 
 <%= form_for([@bike, @bike.comments.build]) do |f| %>
 
@@ -56,7 +63,7 @@
     data: { confirm: 'Are you sure?' } %>
   </button>
 
-	<button  class="bikeButton">
+	<button class="bikeButton">
 	<%= link_to "Edit", edit_bike_path(@bike) %> 
 	</button>
 
@@ -65,7 +72,7 @@
 
   <% end %>
 
-
+</div>
 
 
 
