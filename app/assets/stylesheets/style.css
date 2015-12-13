@@ -260,7 +260,7 @@ img {
 .basic-grey .button:hover {
     background: #CF7A7A
 }	
-
+/*
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -274,4 +274,53 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
+}*/
+
+
+
+#chevron {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height:200px;
+  width: 60px;
 }
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: red;
+  -webkit-transform: skew(0deg, 6deg);
+  -moz-transform: skew(0deg, 6deg);
+  -ms-transform: skew(0deg, 6deg);
+  -o-transform: skew(0deg, 6deg);
+  transform: skew(0deg, 6deg);
+}
+
+
+#rectangle {
+	width: 300px;
+	height: 600px;
+	background: darkgrey;
+	display: inline-block;
+	margin:0px -4px 0px 0px;
+
+
+}
+#triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 600px solid darkgrey;
+	border-right: 200px solid transparent;
+	display: inline-block;
+
+
+}
+
+
+
