@@ -1,17 +1,24 @@
-<!-- <div class="nav-bg navbar-fixed-top"></div> -->
+<div class="nav-bg">
+	<button class="new-contribution">
+	 	<%= link_to "New", new_bike_path(@bike) %>
+	</button>
+
+</div>
 
 
 <div class="sidebar">
 	<div id="rectangle"></div>
 	<div id="triangle-topleft"></div>
 
-		<button class="new-contribution">
-		 <%= link_to "New", new_bike_path(@bike) %>
-		</button>
 	<div class="nav-name ">SLANT
 		<div class="subtitle">Bike Review Forum</div>
+		
 	</div>
 </div>
+
+
+
+
 
 <!-- <video autoplay loop poster="posterimage.jpg" id="bgvid" >
     <source src="https://skyfiregcs-a.akamaihd.net/exp=1449874183~acl=%2A%2F443245101.mp4%2A~hmac=1221fe8f9e9037c5f47dfff01a1ba20a4bf7dc1ca16acaa9a7f9d2d11e6cd463/vimeo-prod-skyfire-std-us/01/4307/5/146538091/443245101.mp4" type="video/mp4">
@@ -22,15 +29,15 @@
 
 
  <div class="browse-gallery ">
-	<div id="scrollButtons">
+<!-- 	<div id="scrollButtons">
 		<button class="leftArrow glyphicon glyphicon-chevron-left"></button>
 		<button class="rightArrow glyphicon glyphicon-chevron-right"></button>		
-	</div>
+	</div> -->
  	<div class="outer">
  		<% @bikes.each do |bike| %>
 	 		<div class="card">
-				<div class="bikeName"><%= bike.name %>
-				</div>
+				<!-- <div class="bikeName"><%= bike.name %> -->
+				<!-- </div> -->
 				<img src='<%= bike.image %>'><br/>
 					<button class="bikeButton">
 						<%= link_to "Lean In!", bike_path(bike) %>
@@ -40,8 +47,6 @@
  	</div>
 </div>
 
-<div class='footer' navbar-fixed-bottom>
-</div>
 
 
 

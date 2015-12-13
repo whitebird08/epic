@@ -1,72 +1,68 @@
-button {
-	/*color:lime-green;*/
-}
 img {
-	height: 200px;
+	height: 100px;
 	width: auto;
 }
 
  body { 
- 	padding-top: -70px; 
+ 	/*padding-top: -70px; */
+ 		background: url(racingPro.jpg);
 
- 	/*background: url(racingPro.jpg)no-repeat;*/
- 
-	/*background-size: cover;*/
-	overflow-x: scroll;
+ 		background-size:cover;
 }
 
-.actionCall {
-	font-size: 64px;
-	margin: auto;
-	text-align: center;
-	color:white;
-}
 .new-contribution {
-	background: white;
-	width: 50px;
-	height: 50px;
+	background: none;
+	width: 25px;
+	height: 25px;
 	border:none;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
-	font-size: 18px;
+	font-size: 24px;
+	padding-top: 15px;
+	float: right;
+	padding-right: 100px;
+	z-index: 1000;
 
 }
 
 .bikeButton{
 	width:100%;
 	display:inline-block;
-	background-color: limegreen;
+	background-color: white;
 	border:none;
 	font-style: italic;
 	font-weight: bold;
 }
 
 .bikeName {
-	color:white;
-	background-color: aqua;
+	color:black;
+	background-color: white;
     width: 100%;
     text-align: center;
+
 }
 
 .card {
 	display: inline-block;
-	margin: 20px;
+	margin: 0px;
 }
 
 .outer { 
 	overflow-x: scroll; 
+
 }
 /*.card { min-width: 200px; }*/
 .browse-gallery {
     width: 100%;
-    height: 300px;
+    height: 120px;
     overflow-x: scroll;
     overflow-y: scroll;
-    background: #585453;
+    background: white;
     white-space: nowrap;
+    bottom:0vw;
     position: absolute;
-    z-index: 1;
+    z-index: 100;
   
 }
 .browse-gallery .img {
@@ -75,7 +71,7 @@ img {
     display: inline-block;
 }
 
-.rightArrow {
+/*.rightArrow {
 	width: 100px;
 	height: 100px;
 	opacity: 0.5;
@@ -86,9 +82,9 @@ img {
 	padding-right: 10px;
 	position: relative;
 	top:50vw;
-}
+}*/
 
-.leftArrow {
+/*.leftArrow {
 	width: 100px;
 	height: 100px;
 	opacity: 0.5;
@@ -97,9 +93,9 @@ img {
 	border-radius: 80px;
 	padding-left: 10px;
 	position: relative;
-}
+}*/
 
-.downButton{
+/*.downButton{
 	font-size: 36px;
 	background: none;
 	color:black;
@@ -110,26 +106,27 @@ img {
 .downArrowDiv {
 	text-align: center;
 	margin:auto;
-}
+}*/
 
-#scrollButtons{
+/*#scrollButtons{
 	width: 100%;
 	top: 36vw;
 	position:absolute;
-}
-.iframeVideo {
-/*	margin-top:-100px;*/
+}*/
+/*.iframeVideo {
+	margin-top:-100px;
 	height: auto;
 	width: 100%;
-}
+}*/
 
 .nav-bg{
     height:75px;
     width: 100%;
-    background-color:grey;
+    background-color:white;
     position: absolute;
-    opacity:0.5;
+    opacity:0.7;
     top:0	;
+    z-index: 2;
 }
 
 .nav-name {
@@ -141,7 +138,7 @@ img {
 	font-style: italic;
 	position: absolute;
     top:0;
-    padding-left: 300px;
+    padding-left: 100px;
     color:#10E011;
 }
 
@@ -176,12 +173,12 @@ img {
 	background-color: grey;
 	border:20px;
 }*/
-
+/*
 .detailsName {
 	font-size: 48px;
 	color:white;
 	text-align: center;
-}
+}*/
 
 /*.detailsImage {
 	height: auto;
@@ -191,7 +188,7 @@ img {
 /*∂ƒ*/
 
 /* Basic Grey */
-.basic-grey {
+/*.basic-grey {
 
 	margin-top:5%;
     margin-left:5%;
@@ -274,7 +271,7 @@ img {
 }
 .basic-grey .button:hover {
     background: #CF7A7A
-}	
+}	*/
 /*
 video#bgvid { 
     position: fixed;
@@ -293,11 +290,11 @@ video#bgvid {
 
 .sidebar {
 	position: absolute;
-	z-index: 2
+	z-index: 300;
 }
 
 #rectangle {
-	width: 375px;
+	width: 150px;
 	height: 750px;
 	background: #4A4A4A;
 	display: inline-block;
