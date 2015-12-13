@@ -22,7 +22,15 @@ img {
 	color:white;
 }
 .new-contribution {
-	background-color: magenta;
+	background: white;
+	width: 50px;
+	height: 50px;
+	border:none;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	font-size: 18px;
+
 }
 
 .bikeButton{
@@ -57,6 +65,8 @@ img {
     overflow-y: scroll;
     background: #585453;
     white-space: nowrap;
+    position: absolute;
+    z-index: 1;
   
 }
 .browse-gallery .img {
@@ -123,16 +133,21 @@ img {
 }
 
 .nav-name {
-	font-size: 48px;
+	font-family: Open Sans;
+	font-size: 72px;
+
 	font-style: bold-italic;
 	font-weight: bold;
 	font-style: italic;
 	position: absolute;
     top:0;
-    padding-left: 20px;
-    color:magenta;
+    padding-left: 300px;
+    color:#10E011;
 }
 
+.subtitle {
+	font-size: 18px;
+}
 .footer {
 	bottom:0;
 	height: 75px;
@@ -276,51 +291,27 @@ video#bgvid {
     background-size: cover; 
 }*/
 
-
-
-#chevron {
-  position: relative;
-  text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height:200px;
-  width: 60px;
+.sidebar {
+	position: absolute;
+	z-index: 2
 }
-
-#chevron:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 51%;
-  background: red;
-  -webkit-transform: skew(0deg, 6deg);
-  -moz-transform: skew(0deg, 6deg);
-  -ms-transform: skew(0deg, 6deg);
-  -o-transform: skew(0deg, 6deg);
-  transform: skew(0deg, 6deg);
-}
-
 
 #rectangle {
-	width: 300px;
-	height: 600px;
-	background: darkgrey;
+	width: 375px;
+	height: 750px;
+	background: #4A4A4A;
 	display: inline-block;
 	margin:0px -4px 0px 0px;
-
 
 }
 #triangle-topleft {
 	width: 0;
 	height: 0;
-	border-top: 600px solid darkgrey;
-	border-right: 200px solid transparent;
+	border-top: 750px solid #4A4A4A;
+	border-right: 250px solid transparent;
 	display: inline-block;
-
-
 }
+
 
 
 
