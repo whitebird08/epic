@@ -1,6 +1,23 @@
+<div class="nav-bg">
+	<button class="new-contribution">
+	 	<%= link_to "Home", bikes_path %>
+	</button>
 
-<%= link_to "Home", bikes_path %>
-<div class="basic-grey">
+</div>
+
+<div class="sidebar" id="newBike">
+	<div id="rectangle"></div>
+	<div id="triangle-topleft"></div>
+
+	<div class="nav-name " id="newBike" >SLANT
+		<div class="subtitle">Bike Review Forum</div>
+		
+	</div>
+</div>
+
+
+
+<div class="editBikeForm">
 <%= form_for :bike, url: bike_path(@bike), method: :patch do |f| %>
 	<p>
 		<%= f.label :name %><br>

@@ -363,3 +363,34 @@ video#bgvid {
 	z-index: 15000;
 }
 
+#editBike.nav-name{
+	padding-left: 320px;
+}
+
+.editBikeForm input[type="text"]{
+
+	height: 50px;
+	width: 300px;
+
+}
+
+.editBikeForm input[type="submit"]{
+	height: 50px;
+	width: 290px;
+	margin-top: 20px;
+	background: #10E011;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	position: absolute;
+	z-index: 15000;
+}
+
+.editBikeForm{
+	color:white	;
+	padding-top: 250px;
+	padding-left: 100px;
+	position: absolute;
+	z-index: 15000;
+}
+
