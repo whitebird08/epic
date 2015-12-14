@@ -31,7 +31,7 @@
 				<!-- </div> -->
 				<img src='<%= bike.image %>'><br/>
 					<button class="bikeButton">
-						<%= link_to "Lean In!", bike_path(bike) %>
+						<%= link_to "#{bike.name}", bike_path(bike) %>
 					</button>
 			</div>	
  		<% end %>

@@ -1,85 +1,91 @@
-<div class="nav-name navbar-fixed-top">Lean In!
+<div class="nav-bg">
   <button class="new-contribution">
     <%= link_to "Home", bikes_path %>
   </button>
+
+</div>
+
+<div class="sidebar" id="newBike">
+  <div id="rectangle"></div>
+  <div id="triangle-topleft"></div>
+
+  <div class="nav-name " id="newBike" >SLANT
+    <div class="subtitle">Bike Review Forum</div>
+    
+  </div>
+</div>
+
+<div class='addCommentForm'>
+
+  <h2 class="addComment">Add a comment:</h2>
+
+  <%= form_for([@bike, @bike.comments.build]) do |f| %>
+
+  <p>
+     <%= f.label :commenter %><br>
+     <%= f.text_field :commenter %>
+  </p>
+
+  <p id="commentBody">
+     <%= f.label :body %><br>
+     <%= f.text_area :body %>
+  </p>
+
+  <p>
+      <%= f.submit %>
+  </p>
+
+  <% end %>
+</div>
+
+<div class="existingComments">
+
+  <p >
+    <img class="detailsImage" src='<%= @bike.image %>'>
+  </p>
+
+  <h1 class='detailsName'>
+    <%= @bike.name %>
+  </h1>
+
+  <% @bike.comments.each do |comment| %>
+    <% if comment.id %>
+      <p id="nextComment">
+
+      	<strong>Commenter: </strong>
+      	<%= comment.commenter %>
+      </p>
+      <p >
+         <strong>Comment: </strong>
+         <%= comment.body %>
+      </p>
+    <% end %>
+
+    <% if comment.id %>
+      <button class="destroyCommentButton">
+        <%= link_to 'Destroy Comment',bike_comment_path(@bike, comment),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+      </button>
+
+    <% end %>
+
+  <% end %>
+
+    <div class="bigButtons">
+        <button class="destroyPostButton">
+          <%= link_to 'Destroy Post',bike_path(@bike),
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %>
+        </button>
+
+        <button class="editPostButton">
+        <%= link_to "Edit", edit_bike_path(@bike) %> 
+        </button>
+    </div>
 </div>
 
 
-
-<div class='detailsCard basic-grey'>
-<p class='detailsName'>
-<!-- 	<strong>Name:</strong> -->
-	<%= @bike.name %>
-</p>
-
-<p >
-<!-- <strong>Image:</strong> -->
-	<img class="detailsImage" src='<%= @bike.image %>'>
-</p>
-
-
-<h2 class="addComment">Add a comment:</h2>
-
-<%= form_for([@bike, @bike.comments.build]) do |f| %>
-
-<p>
-
- <%= f.label :commenter %><br>
-
- <%= f.text_field :commenter %>
-
-</p>
-
-<p>
-
- <%= f.label :body %><br>
-
- <%= f.text_area :body %>
-
-</p>
-
-<p>
-
- <%= f.submit %>
-
-</p>
-
-<% end %>
-<% @bike.comments.each do |comment| %>
-  <% if comment.id %>
-<p>
-	<strong>Commenter:</strong>
-	<%= comment.commenter %>
-</p>
-<p>
-   <strong>Comment:</strong>
-   <%= comment.body %>
-</p>
-  <% end %>
-  <% if comment.id %>
-  <button>
-    <%= link_to 'Destroy Comment',bike_comment_path(@bike, comment),
-    method: :delete,
-    data: { confirm: 'Are you sure?' } %>
-  </button>
-
-
-  <% end %>
-
-
-  <% end %>
-
-  <button>
-    <%= link_to 'Destroy Post',bike_path(@bike),
-    method: :delete,
-    data: { confirm: 'Are you sure?' } %>
-  </button>
-
-	<button class="bikeButton">
-	<%= link_to "Edit", edit_bike_path(@bike) %> 
-	</button>
-
-</div>
 
 
 
