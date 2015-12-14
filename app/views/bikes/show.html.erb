@@ -22,13 +22,13 @@
   <%= form_for([@bike, @bike.comments.build]) do |f| %>
 
   <p>
-     <%= f.label :commenter %><br>
+     <%= f.label :commenter, :class=>"label" %><br>
      <%= f.text_field :commenter %>
   </p>
 
   <p id="commentBody">
-     <%= f.label :body %><br>
-     <%= f.text_area :body %>
+     <%= f.label :body, :class=>"label" %><br>
+     <%= f.text_area :body, :class=>"textArea" %>
   </p>
 
   <p>

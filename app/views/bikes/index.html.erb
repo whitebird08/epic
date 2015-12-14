@@ -27,12 +27,13 @@
  	<div class="outer">
  		<% @bikes.each do |bike| %>
 	 		<div class="card">
-				<!-- <div class="bikeName"><%= bike.name %> -->
-				<!-- </div> -->
+			
+					<!-- <div class="bikeName"><%= bike.name %>  -->
 				<img src='<%= bike.image %>'><br/>
 					<button class="bikeButton">
-						<%= link_to "#{bike.name}", bike_path(bike) %>
+						<%= link_to bike.name, bike_path(bike) %>
 					</button>
+				 <!-- </div>  -->
 			</div>	
  		<% end %>
  	</div>

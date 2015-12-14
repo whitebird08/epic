@@ -47,6 +47,12 @@ img {
 	display: inline-block;
 	margin: 0px;
 }
+/*.card:hover {
+	width:120px;
+	height:120px;
+	transition:0.3s;
+	position: absolute;
+}*/
 
 .outer { 
 	overflow-x: scroll; 
@@ -284,13 +290,15 @@ img {
 
 .destroyPostButton {
 	height: 50px;
-	width: 400px;
+	width: 200px;
 	background: #10E011;
 	-webkit-transform: skew(-20deg);
 	   -moz-transform: skew(-20deg);
 	     -o-transform: skew(-20deg);
 	position: absolute;
 	z-index: 15000;
+
+
 }
 
 .editPostButton {
@@ -303,10 +311,13 @@ img {
 	     -o-transform: skew(-20deg);
 	position: absolute;
 	z-index: 15000;
+	margin-left: 250px;
 }
 
 .bigButtons {
 	display: inline-block;
+	margin-top:100px;
+	
 }
 
 #addComment.nav-name{
@@ -319,10 +330,18 @@ img {
 	color:black;
 }
 
-input[type="text_area"]{
+.addComment {
+	color:white;	
+}
+.textArea {
+	width: 300px;
+	height: 150px;
+}
+
+.label {
 	height:150px;
 	width: 300px;
-	color:black;
+	color:white;
 }
 
 .addCommentForm input[type="submit"]{
@@ -338,9 +357,11 @@ input[type="text_area"]{
 }
 
 .addCommentForm{
-	color:white	;
-	padding-top: 250px;
-	padding-left: 100px;
+	/*color:white	;*/
+	padding-top: 150px;
+	padding-left: 80px;
 	position: absolute;
 	z-index: 15000;
 }
+
+
