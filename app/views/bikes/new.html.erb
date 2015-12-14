@@ -1,5 +1,22 @@
-<div class="basic-grey">
-<%= link_to "Home", bikes_path %>
+<div class="nav-bg">
+	<button class="new-contribution">
+	 	<%= link_to "Home", bikes_path %>
+	</button>
+
+</div>
+
+<div class="sidebar" id="newBike">
+	<div id="rectangle"></div>
+	<div id="triangle-topleft"></div>
+
+	<div class="nav-name " id="newBike" >SLANT
+		<div class="subtitle">Bike Review Forum</div>
+		
+	</div>
+</div>
+
+<div class="newBikeForm">
+
 
 <%= form_for :bike, url: bikes_path do |f| %>
 	<p>
@@ -12,7 +29,7 @@
 		<%= f.text_field :image %>
 	</p>
 
-	<p>
+	<p id="submitButton">
 		<%= f.submit %>
 	</p>
 

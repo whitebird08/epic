@@ -5,8 +5,7 @@ img {
 
  body { 
  	/*padding-top: -70px; */
- 		background: url(racingPro.jpg);
-
+ 		background: url(racingPro.jpg)no-repeat;
  		background-size:cover;
 }
 
@@ -19,10 +18,11 @@ img {
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
 	font-size: 24px;
-	padding-top: 15px;
+	padding-top: 20px;
 	float: right;
 	padding-right: 100px;
 	z-index: 1000;
+	font-style: italic;
 
 }
 
@@ -120,7 +120,7 @@ img {
 }*/
 
 .nav-bg{
-    height:75px;
+    height:80px;
     width: 100%;
     background-color:white;
     position: absolute;
@@ -294,8 +294,8 @@ video#bgvid {
 }
 
 #rectangle {
-	width: 150px;
-	height: 750px;
+	width: 155px;
+	height: 760px;
 	background: #4A4A4A;
 	display: inline-block;
 	margin:0px -4px 0px 0px;
@@ -304,11 +304,62 @@ video#bgvid {
 #triangle-topleft {
 	width: 0;
 	height: 0;
-	border-top: 750px solid #4A4A4A;
+	border-top: 760px solid #4A4A4A;
 	border-right: 250px solid transparent;
 	display: inline-block;
 }
 
 
+#newBike.sidebar{
+	position: absolute;
+	z-index: 300;
+}
 
+#newBike #rectangle {
+	width: 355px;
+	height: 760px;
+	background: #4A4A4A;
+	display: inline-block;
+	margin:0px -4px 0px 0px;
+}
+
+#newBike #triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 760px solid #4A4A4A;
+	border-right: 250px solid transparent;
+	display: inline-block;
+}
+
+
+#newBike.nav-name{
+	padding-left: 320px;
+}
+
+.newBikeForm input[type="text"]{
+
+	height: 50px;
+	width: 300px;
+
+}
+
+.newBikeForm input[type="submit"]{
+	height: 50px;
+	width: 290px;
+	margin-top: 20px;
+	background: #10E011;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	position: absolute;
+	z-index: 15000;
+}
+
+.newBikeForm{
+	color:white	;
+	padding-top: 250px;
+	padding-left: 100px;
+	position: absolute;
+	z-index: 15000;
+}
 
