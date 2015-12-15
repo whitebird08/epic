@@ -2,11 +2,23 @@ img {
 	height: 100px;
 	width: auto;
 }
+html {
+	background-size: cover;
+}
 
- body { 
- 	/*padding-top: -70px; */
- 		background: url(racingPro.jpg)no-repeat;
- 		background-size:cover;
+.index-bg { 
+ 	background: url(racingPro.jpg)no-repeat;	
+}
+
+.show-bg {
+	background: white;
+}
+.edit-bg {
+	background: url(racingPro.jpg)no-repeat;
+}
+
+.new-bg {
+	background: url(racingPro.jpg)no-repeat;
 }
 
 .new-contribution {
