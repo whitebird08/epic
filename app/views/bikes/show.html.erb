@@ -3,16 +3,13 @@
   <button class="new-contribution">
     <%= link_to "Home", bikes_path %>
   </button>
-
 </div>
 
 <div class="sidebar" id="newBike">
   <div id="rectangle"></div>
   <div id="triangle-topleft"></div>
-
   <div class="nav-name " id="newBike" >SLANT
-    <div class="subtitle">Bike Review Forum</div>
-    
+    <div class="subtitle">Bike Review Forum</div> 
   </div>
 </div>
 
@@ -73,17 +70,17 @@
 
   <% end %>
 
-    <div class="bigButtons">
-        <button class="destroyPostButton">
-          <%= link_to 'Destroy Post',bike_path(@bike),
-          method: :delete,
-          data: { confirm: 'Are you sure?' } %>
-        </button>
+  <div class="bigButtons">
+      <button class="destroyPostButton">
+        <%= link_to 'Destroy Post',bike_path(@bike),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+      </button>
 
-        <button class="editPostButton">
-        <%= link_to "Edit", edit_bike_path(@bike) %> 
-        </button>
-    </div>
+      <button class="editPostButton">
+      <%= link_to "Edit", edit_bike_path(@bike) %> 
+      </button>
+  </div>
 </div>
 
 </body>

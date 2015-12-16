@@ -5,13 +5,12 @@ class CommentsController < ApplicationController
     redirect_to bike_path(@bike)
   end
 
-    def destroy
+  def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
     @bike = Bike.find(params[:bike_id])
     redirect_to @bike
   end
-
  
   private
     def comment_params

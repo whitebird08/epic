@@ -3,7 +3,6 @@
 	<button class="new-contribution">
 	 	<%= link_to "Home", bikes_path %>
 	</button>
-
 </div>
 
 <div class="sidebar" id="newBike">
@@ -16,27 +15,24 @@
 	</div>
 </div>
 
-
-
 <div class="editBikeForm">
-<%= form_for :bike, url: bike_path(@bike), method: :patch do |f| %>
-	<p>
-		<%= f.label :name %><br>
-		<%= f.text_field :name %>
-	</p>
+	<%= form_for :bike, url: bike_path(@bike), method: :patch do |f| %>
+		<p>
+			<%= f.label :name %><br>
+			<%= f.text_field :name %>
+		</p>
 
-	<p>
-		<%= f.label :image %><br>
-		<%= f.text_field :image %>
-	</p>
+		<p>
+			<%= f.label :image %><br>
+			<%= f.text_field :image %>
+		</p>
 
-	<p>
-		<%= f.submit %>
-	</p>
+		<p>
+			<%= f.submit %>
+		</p>
 
-<% end %>
+	<% end %>
 </div>
 
 	<img class="detailsImage" src='<%= @bike.image %>'>
-</p>
 </body>

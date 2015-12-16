@@ -2,25 +2,21 @@ img {
 	height: 100px;
 	width: auto;
 }
-html {
+body {
 	background-size: cover;
 }
-
 .index-bg { 
  	background: url(racingPro.jpg)no-repeat;	
 }
-
 .show-bg {
 	background: white;
 }
 .edit-bg {
 	background: url(racingPro.jpg)no-repeat;
 }
-
 .new-bg {
 	background: url(racingPro.jpg)no-repeat;
 }
-
 .new-contribution {
 	background: none;
 	width: 25px;
@@ -35,9 +31,7 @@ html {
 	padding-right: 100px;
 	z-index: 1000;
 	font-style: italic;
-
 }
-
 .bikeButton{
 	width:100%;
 	display:inline-block;
@@ -46,31 +40,19 @@ html {
 	font-style: italic;
 	font-weight: bold;
 }
-
 .bikeName {
 	color:black;
 	background-color: white;
     width: 100%;
     text-align: center;
-
 }
-
 .card {
 	display: inline-block;
 	margin: 0px;
 }
-/*.card:hover {
-	width:120px;
-	height:120px;
-	transition:0.3s;
-	position: absolute;
-}*/
-
 .outer { 
 	overflow-x: scroll; 
-
 }
-/*.card { min-width: 200px; }*/
 .browse-gallery {
     width: 100%;
     height: 120px;
@@ -81,62 +63,12 @@ html {
     bottom:0vw;
     position: absolute;
     z-index: 100;
-  
 }
 .browse-gallery .img {
     width: 109px;
     height: 81px;
     display: inline-block;
 }
-
-/*.rightArrow {
-	width: 100px;
-	height: 100px;
-	opacity: 0.5;
-	border: none;
-	font-size:2em;
-	border-radius: 80px;
-	float: right;
-	padding-right: 10px;
-	position: relative;
-	top:50vw;
-}*/
-
-/*.leftArrow {
-	width: 100px;
-	height: 100px;
-	opacity: 0.5;
-	border: none;
-	font-size:2em;
-	border-radius: 80px;
-	padding-left: 10px;
-	position: relative;
-}*/
-
-/*.downButton{
-	font-size: 36px;
-	background: none;
-	color:black;
-	border: none;
-	text-align: center;
-	position: relative;
-}sf
-.downArrowDiv {
-	text-align: center;
-	margin:auto;
-}*/
-
-/*#scrollButtons{
-	width: 100%;
-	top: 36vw;
-	position:absolute;
-}*/
-/*.iframeVideo {
-	margin-top:-100px;
-	height: auto;
-	width: 100%;
-}*/
-
 .nav-bg{
     height:80px;
     width: 100%;
@@ -146,7 +78,6 @@ html {
     top:0	;
     z-index: 2;
 }
-
 .nav-name {
 	font-family: Open Sans;
 	font-size: 72px;
@@ -159,23 +90,19 @@ html {
     padding-left: 100px;
     color:#10E011;
 }
-
 .subtitle {
 	font-size: 18px;
 }
-
 .sidebar {
 	position: absolute;
 	z-index: 300;
 }
-
 #rectangle {
 	width: 155px;
 	height: 760px;
 	background: #4A4A4A;
 	display: inline-block;
 	margin:0px -4px 0px 0px;
-
 }
 #triangle-topleft {
 	width: 0;
@@ -184,13 +111,10 @@ html {
 	border-right: 250px solid transparent;
 	display: inline-block;
 }
-
-
 #newBike.sidebar{
 	position: absolute;
 	z-index: 300;
 }
-
 #newBike #rectangle {
 	width: 355px;
 	height: 760px;
@@ -198,7 +122,6 @@ html {
 	display: inline-block;
 	margin:0px -4px 0px 0px;
 }
-
 #newBike #triangle-topleft {
 	width: 0;
 	height: 0;
@@ -206,19 +129,14 @@ html {
 	border-right: 250px solid transparent;
 	display: inline-block;
 }
-
-
 #newBike.nav-name{
 	padding-left: 320px;
 }
-
 .newBikeForm input[type="text"]{
 	height: 50px;
 	width: 300px;
 	color:black;
-
 }
-
 .newBikeForm input[type="submit"]{
 	height: 50px;
 	width: 290px;
@@ -230,7 +148,6 @@ html {
 	position: absolute;
 	z-index: 15000;
 }
-
 .newBikeForm{
 	color:white	;
 	padding-top: 250px;
@@ -238,19 +155,14 @@ html {
 	position: absolute;
 	z-index: 15000;
 }
-
 #editBike.nav-name{
 	padding-left: 320px;
 }
-
 .editBikeForm input[type="text"]{
-
 	height: 50px;
 	width: 300px;
 	color:black;
-
 }
-
 .editBikeForm input[type="submit"]{
 	height: 50px;
 	width: 290px;
@@ -262,7 +174,6 @@ html {
 	position: absolute;
 	z-index: 15000;
 }
-
 .editBikeForm{
 	color:black;
 	padding-top: 250px;
@@ -270,28 +181,21 @@ html {
 	position: absolute;
 	z-index: 15000;
 }
-
 .existingComments {
 	padding-left: 700px;
 	padding-top: 100px;
 	color:#4A4A4A;;
-
 }
-
 .detailsImage {
 	height: 200px;
 	width: auto;
 }
-
-
 #nextComment {
 	padding-top: 50px;
 }
-
 .destroyCommentButton {
 	height: 25px;
 	width: 150px;
-/*	margin-bottom:50px;*/
 	background: #10E011;
 	-webkit-transform: skew(-20deg);
 	   -moz-transform: skew(-20deg);
@@ -299,7 +203,6 @@ html {
 	position: absolute;
 	z-index: 15000;
 }
-
 .destroyPostButton {
 	height: 50px;
 	width: 200px;
@@ -309,10 +212,7 @@ html {
 	     -o-transform: skew(-20deg);
 	position: absolute;
 	z-index: 15000;
-
-
 }
-
 .editPostButton {
 	height: 50px;
 	width: 200px;
@@ -325,23 +225,18 @@ html {
 	z-index: 15000;
 	margin-left: 250px;
 }
-
 .bigButtons {
 	display: inline-block;
-	margin-top:100px;
-	
+	margin-top:100px;	
 }
-
 #addComment.nav-name{
 	padding-left: 320px;
 }
-
 .addCommentForm input[type="text"]{
 	height: 50px;
 	width: 300px;
 	color:black;
 }
-
 .addComment {
 	color:white;	
 }
@@ -349,13 +244,11 @@ html {
 	width: 300px;
 	height: 150px;
 }
-
 .label {
 	height:150px;
 	width: 300px;
 	color:white;
 }
-
 .addCommentForm input[type="submit"]{
 	height: 50px;
 	width: 290px;
@@ -367,9 +260,7 @@ html {
 	position: absolute;
 	z-index: 15000;
 }
-
 .addCommentForm{
-	/*color:white	;*/
 	padding-top: 150px;
 	padding-left: 80px;
 	position: absolute;
