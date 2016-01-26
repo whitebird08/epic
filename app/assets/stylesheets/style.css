@@ -184,9 +184,11 @@ body {
 	z-index: 15000;
 }
 .existingComments {
+	height: 650px;
 	padding-left: 700px;
 	padding-top: 100px;
 	color:#4A4A4A;;
+	/*overflow:scroll;*/
 }
 .detailsImage {
 	height: 200px;
